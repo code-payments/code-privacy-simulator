@@ -20,6 +20,27 @@ To get started, make sure you have node installed on your system. Once you have 
 
 To run the tests and simulations, simply run `npm run tests` or `npm run simulation` or `npm run examples` from the command line.
 
+## Simulated Sends
+
+There are a number of test scenarios and simulations that can be activated in the codebase.
+
+For example, in `Subtest: send 5 (dynamic full)`, you'll see outputs like the following:
+
+![image](https://github.com/code-wallet/code-sim/assets/623790/b1668dc3-64ec-430c-9c64-19133fd938ed)
+
+These can be read as the individual transactions to make a private payment. Each row is an action that results in one or more transactions. Each transfer is implied to be through the splitter contract, so not directly between buckets or outgoing/incoming accounts. Also, note that some of these are `offline` transactions that don't get commited on-chain and are generated strictly for their signature. For more details about the algorithms used in this codebase, refer to [The Change-Making Problem](https://www.semanticscholar.org/paper/The-Change-Making-Problem-Wright/8590f4bc02b7d169a63749c963b32054f1d054d0). Specifically, we use a modified dynamic programming algorithm described [here](https://github.com/code-wallet/code-typescript-client/blob/main/src/types/Organizer.ts#L700-L724).
+
+The above state transformations were applied in order to make `9,000` tokens available for private send given a starting configuration of balances that looks like this:
+
+![image](https://github.com/code-wallet/code-sim/assets/623790/af6f5b40-3373-47d3-905f-5440ca5c1c02)
+
+Resulting in the following balances (note that the total is conserved):
+
+![image](https://github.com/code-wallet/code-sim/assets/623790/2d115406-e192-48fd-b1e3-47d404356966)
+
+
+
+
 ## Getting Help
 
 If you have any questions or need help integrating Code into your website or application, please reach out to us on [Discord](https://discord.gg/T8Tpj8DBFp) or [Twitter](https://twitter.com/getcode).
