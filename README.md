@@ -20,9 +20,9 @@ To get started, make sure you have node installed on your system. Once you have 
 
 To run the tests and simulations, simply run `npm run tests` or `npm run simulation` or `npm run examples` from the command line.
 
-## Simulated Sends
+## Tests
 
-There are a number of test scenarios and simulations that can be activated in the codebase.
+There are a number of test scenarios and simulations provided in the codebase.
 
 For example, in `Subtest: send 5 (dynamic full)`, you'll see outputs like the following:
 
