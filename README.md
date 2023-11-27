@@ -1,6 +1,6 @@
 ![Code Protobuf APIs](https://github.com/code-wallet/code-sim/assets/623790/c15e0f9b-8103-44f2-b8d9-49f0be865702)
 
-# Simulated Wallet App
+# Privacy Simulator
 
 This repository was originally used to test various configuration values against the [Code Sequencer](https://code-wallet.github.io/code-sdk/docs/reference/sequencer.html). The simulations are not longer actively used but may be useful as a reference. You should instead refer to the iOS codebase.
 
