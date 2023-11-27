@@ -1,6 +1,11 @@
-![Code Privacy Simulator](https://github.com/code-payments/code-privacy-simulator/assets/623790/2f37a72f-94f6-4c2b-987e-ac42853254d5)
+<img width="1280" alt="Code Privacy Simulator" src="https://github.com/code-payments/code-privacy-simulator/assets/623790/a5b91f8b-4d05-4eab-bed3-957cb5fcbdec">
 
 # Code Privacy Simulator
+![license][license-image]
+![version][version-image]
+
+[version-image]: https://img.shields.io/badge/version-0.0.0-blue.svg?style=flat
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 
 This repository was originally used to test various configuration values against the [Code Sequencer](https://code-wallet.github.io/code-sdk/docs/reference/sequencer.html). The simulations are not longer actively used but may be useful as a reference. You should instead refer to the iOS codebase.
 
