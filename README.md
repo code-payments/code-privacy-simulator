@@ -1,6 +1,13 @@
-# Simulated Wallet App
+<img width="1280" alt="Code Privacy Simulator" src="https://github.com/code-payments/code-privacy-simulator/assets/623790/a5b91f8b-4d05-4eab-bed3-957cb5fcbdec">
 
-This repository was originally used to test various configuration values against the [Code Sequencer](https://code-wallet.github.io/code-sdk/docs/reference/sequencer.html). The simulations are not longer actively used but may be useful as a reference. You should instead refer to the iOS codebase.
+# Code Privacy Simulator
+![license][license-image]
+![version][version-image]
+
+[version-image]: https://img.shields.io/badge/version-0.0.0-blue.svg?style=flat
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
+
+This repository was originally used to test various configuration values against the [Code Sequencer](https://code-payments.github.io/code-sdk/docs/reference/sequencer.html). The simulations are not longer actively used but may be useful as a reference. You should instead refer to the iOS codebase.
 
 Additionally, the Code SDK was created from the work in this repository, and is now the recommended way to interact with the Code Sequencer from Node.js or the browser. See the [Code SDK](https://sdk.getcode.com). While the Code SDK is not a direct replacement for this repository, it does provide a more robust and stable way to interact with the Code Sequencer. We will continue to pull useful code from this repository into the Code SDK.
 
@@ -28,7 +35,7 @@ For example, in `Subtest: send 5 (dynamic full)`, you'll see outputs like the fo
 
 ![image](https://github.com/code-wallet/code-sim/assets/623790/b1668dc3-64ec-430c-9c64-19133fd938ed)
 
-These can be read as the individual transactions to make a private payment. Each row is an action that results in one or more transactions. Each transfer is implied to be through the splitter contract, so not directly between buckets or outgoing/incoming accounts. Also, note that some of these are `offline` transactions that don't get commited on-chain and are generated strictly for their signature. For more details about the algorithms used in this codebase, refer to [The Change-Making Problem](https://www.semanticscholar.org/paper/The-Change-Making-Problem-Wright/8590f4bc02b7d169a63749c963b32054f1d054d0). Specifically, we use a modified dynamic programming algorithm described [here](https://github.com/code-wallet/code-typescript-client/blob/main/src/types/Organizer.ts#L700-L724).
+These can be read as the individual transactions to make a private payment. Each row is an action that results in one or more transactions. Each transfer is implied to be through the splitter contract, so not directly between buckets or outgoing/incoming accounts. Also, note that some of these are `offline` transactions that don't get commited on-chain and are generated strictly for their signature. For more details about the algorithms used in this codebase, refer to [The Change-Making Problem](https://www.semanticscholar.org/paper/The-Change-Making-Problem-Wright/8590f4bc02b7d169a63749c963b32054f1d054d0). Specifically, we use a modified dynamic programming algorithm described [here](https://github.com/code-payments/code-privacy-simulator/blob/main/src/types/Organizer.ts#L700-L724).
 
 The above state transformations were applied in order to make `9,000` tokens available for private send given a starting configuration of balances that looks like this:
 
