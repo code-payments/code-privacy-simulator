@@ -9,7 +9,7 @@ export async function example_verify_phone(
     env: code.Environment,
 ): Promise<api.PhoneLinkingToken | undefined> {
     
-    const client = new api.PhoneVerificationClient('api.codeinfra.dev:443', ChannelCredentials.createSsl());
+    const client = new api.PhoneVerificationClient('api.codeinfra.net:443', ChannelCredentials.createSsl());
 
     const sendVerificationCode = promisify(client.sendVerificationCode.bind(client));
     const checkVerificationCode = promisify(client.checkVerificationCode.bind(client));

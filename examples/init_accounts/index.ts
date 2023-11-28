@@ -24,7 +24,7 @@ export async function example_init_accounts(env: code.Environment, lastIncoming:
 
         try {
             const client = new api.TransactionClient(
-                'api.codeinfra.dev:443',
+                'api.codeinfra.net:443',
                 ChannelCredentials.createSsl());
 
             await intent.submit(client);

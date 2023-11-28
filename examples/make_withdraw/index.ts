@@ -31,7 +31,7 @@ export async function example_make_withdraw(
     console.log(code.Utils.prettyPrintActions(organizer, intent.actions));
 
     try {
-        const client = new api.TransactionClient('api.codeinfra.dev:443', ChannelCredentials.createSsl());
+        const client = new api.TransactionClient('api.codeinfra.net:443', ChannelCredentials.createSsl());
         await intent.submit(client);
         client.close();
     } catch (e) {

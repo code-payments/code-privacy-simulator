@@ -8,7 +8,7 @@ export async function example_upgrade_flow(
     env: code.Environment,
 ): Promise<void> {
 
-    const client = new api.TransactionClient('api.codeinfra.dev:443', ChannelCredentials.createSsl());
+    const client = new api.TransactionClient('api.codeinfra.net:443', ChannelCredentials.createSsl());
     const getUpgradeableIntents = promisify(client.getPrioritizedIntentsForPrivacyUpgrade.bind(client));
 
     try {

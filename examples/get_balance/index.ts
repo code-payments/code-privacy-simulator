@@ -9,7 +9,7 @@ export async function example_get_balance(
     state: code.Tray,
 ): Promise<void> {
 
-    const client = new api.AccountClient('api.codeinfra.dev:443', ChannelCredentials.createSsl());
+    const client = new api.AccountClient('api.codeinfra.net:443', ChannelCredentials.createSsl());
 
     // Make the request into a promise instead of a cllback
     const getTokenAccountInfos = promisify(client.getTokenAccountInfos.bind(client));

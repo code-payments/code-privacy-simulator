@@ -15,7 +15,7 @@ export async function example_link_account(
     token: phone.PhoneLinkingToken,
 ): Promise<void> {
     
-    const client = new api.IdentityClient('api.codeinfra.dev:443', ChannelCredentials.createSsl());
+    const client = new api.IdentityClient('api.codeinfra.net:443', ChannelCredentials.createSsl());
     const linkAccount = promisify(client.linkAccount.bind(client));
 
     try {
