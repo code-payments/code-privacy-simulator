@@ -7,7 +7,7 @@
 [version-image]: https://img.shields.io/badge/version-0.0.0-blue.svg?style=flat
 [license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 
-This repository was originally used to test various configuration values against the [Code Sequencer](https://code-wallet.github.io/code-sdk/docs/reference/sequencer.html). The simulations are not longer actively used but may be useful as a reference. You should instead refer to the iOS codebase.
+This repository was originally used to test various configuration values against the [Code Sequencer](https://code-payments.github.io/code-sdk/docs/reference/sequencer.html). The simulations are not longer actively used but may be useful as a reference. You should instead refer to the iOS codebase.
 
 Additionally, the Code SDK was created from the work in this repository, and is now the recommended way to interact with the Code Sequencer from Node.js or the browser. See the [Code SDK](https://sdk.getcode.com). While the Code SDK is not a direct replacement for this repository, it does provide a more robust and stable way to interact with the Code Sequencer. We will continue to pull useful code from this repository into the Code SDK.
 
